@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5em;
+    margin-left: 25em;
+    margin-right: 25em;
+    gap: 16px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-name {
+    font-weight: bold;
+}
+
+.card {
+    height: 150px;
+    border: 5px solid gold;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
