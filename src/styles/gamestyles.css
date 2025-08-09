@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
-
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,6 +8,11 @@
 
     align-items: center;
     justify-content: center;
+}
+
+.score-container {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .pokemon-name {
