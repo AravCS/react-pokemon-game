@@ -1,5 +1,5 @@
 import Game from "./components/Game.jsx";
-import Preview from "./components/Preview.jsx";
+import Preview from "./components/preview.jsx";
 import "./index.css"
 import {useState} from "react";
 
