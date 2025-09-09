@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import '../styles/gamestyles.css';
 
 export default function Game() {
     const [pokemonData, setPokemonData] = useState([])
@@ -115,18 +114,20 @@ export default function Game() {
     }
 
     return (
-        <div className="container">
-            <div className="score-container">
-                <div className="score"> Score: {clickCount} </div>
-                <div className="high-score"> High Score: {highScore} </div>
+        <div class>
+            <div class="font-extrabold text-xl mt-2 flex flex-col items-center justify-center">
+                <div>Score: {clickCount}</div>
+                <div>High Score: {highScore}</div>
             </div>
-            <div className="card-container">
+            <div class="flex items-center justify-center w-full">
+            <div class="grid grid-cols-3 mt-25 mx-40 gap-y-8 justify-items-center w-lg">
                 {pokemonData.map((item) => (
-                    <button key={item.id} className="card" onClick={() => handleClick(item)}>
+                    <button class="flex flex-col items-center justify-center h-[150px] w-[150px] border-5 border-amber-500 rounded-xl bg-white shadow-2xl cursor-pointer text-md hover:-translate-y-1/12" key={item.id} onClick={() => handleClick(item)}>
                         <img src={item.url} alt="pokemon card"/>
-                        <div className="pokemon-name"> {item.name.toUpperCase()} </div>
+                        <div class="font-bold">{item.name.toUpperCase()}</div>
                     </button>
                 ))}
+            </div>
             </div>
         </div>
     )
