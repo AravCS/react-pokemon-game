@@ -120,7 +120,7 @@ export default function Game() {
                 <div>High Score: {highScore}</div>
             </div>
             <div class="flex items-center justify-center w-full">
-            <div class="grid grid-cols-3 mt-25 mx-40 gap-y-8 justify-items-center w-lg">
+            <div class="grid grid-cols-2 md:grid-cols-3 mt-10 gap-y-8 justify-items-center w-lg">
                 {pokemonData.map((item) => (
                     <button class="flex flex-col items-center justify-center h-[150px] w-[150px] border-5 border-amber-500 rounded-xl bg-white shadow-2xl cursor-pointer text-md hover:-translate-y-1/12" key={item.id} onClick={() => handleClick(item)}>
                         <img src={item.url} alt="pokemon card"/>
